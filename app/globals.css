@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  /* Natural, earthy palette inspired by fields, leather and horse coats */
+  --background: #faf5eb;
+  --foreground: #2b2018;
+  --card: #fffbf3;
+  --card-foreground: #2b2018;
+
+  --primary: #8a4a2c;
+  --primary-foreground: #fdf3e7;
+
+  --secondary: #4b5d3a;
+  --secondary-foreground: #f3ead9;
+
+  --accent: #c99a53;
+  --accent-foreground: #2b2018;
+
+  --muted: #eee2cb;
+  --muted-foreground: #6b5d4c;
+
+  --border: #ddccab;
+  --ring: #8a4a2c;
+}
+
+.dark {
+  --background: #1b160f;
+  --foreground: #f3ead9;
+  --card: #241d14;
+  --card-foreground: #f3ead9;
+
+  --primary: #d0895a;
+  --primary-foreground: #1b160f;
+
+  --secondary: #7f9a63;
+  --secondary-foreground: #14170e;
+
+  --accent: #e0bd7d;
+  --accent-foreground: #1b160f;
+
+  --muted: #2c2417;
+  --muted-foreground: #cab99c;
+
+  --border: #3a2f20;
+  --ring: #d0895a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-manrope);
+  --font-serif: var(--font-playfair);
+
+  --animate-fade-up: fade-up 0.7s ease-out both;
+  --animate-fade-in: fade-in 0.8s ease-out both;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+* {
+  border-color: var(--border);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
+
+/* Scroll-reveal helper: hidden until the "in-view" class is added by JS */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity 0.7s ease-out,
+    transform 0.7s ease-out;
+}
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
