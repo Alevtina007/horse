@@ -2,6 +2,7 @@
 
 import { useState, type FormEvent } from "react";
 import { Loader2, CheckCircle2, AlertCircle } from "lucide-react";
+import { reachGoal } from "@/lib/yandex-metrika";
 
 /**
  * Форма заявки. Отправляет данные на наш собственный серверный роут
@@ -77,6 +78,9 @@ export function LeadForm() {
 
       setStatus("success");
       setValues(initialValues);
+      // Сообщаем Метрике, что заявка успешно оформлена — по этой цели
+      // потом можно смотреть конверсию сайта в заявки.
+      reachGoal("lead");
     } catch {
       setStatus("error");
       setErrorMessage("Проблема с подключением. Проверьте интернет и попробуйте ещё раз.");

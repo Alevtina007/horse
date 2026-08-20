@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/liquid/navbar";
 import { Footer } from "@/components/liquid/footer";
 import { RevealObserver } from "@/components/reveal-observer";
+import { YandexMetrika } from "@/components/analytics/yandex-metrika";
+import { CookieBanner } from "@/components/cookie-banner";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -40,6 +42,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <main className="flex-1">{children}</main>
           <Footer />
           <RevealObserver />
+          <CookieBanner />
+          <YandexMetrika />
         </ThemeProvider>
       </body>
     </html>
