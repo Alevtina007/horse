@@ -1,48 +1,56 @@
 @import "tailwindcss";
 
 :root {
-  /* Natural, earthy palette inspired by fields, leather and horse coats */
-  --background: #faf5eb;
-  --foreground: #2b2018;
-  --card: #fffbf3;
-  --card-foreground: #2b2018;
+  /* LIQUID - Premium fashion value intelligence palette */
+  --background: #faf8f5;
+  --foreground: #0a0a0a;
+  --card: #ffffff;
+  --card-foreground: #0a0a0a;
 
-  --primary: #8a4a2c;
-  --primary-foreground: #fdf3e7;
+  --primary: #0a0a0a;
+  --primary-foreground: #faf8f5;
 
-  --secondary: #4b5d3a;
-  --secondary-foreground: #f3ead9;
+  --secondary: #4a4a4a;
+  --secondary-foreground: #faf8f5;
 
-  --accent: #c99a53;
-  --accent-foreground: #2b2018;
+  --accent: #6b1c23;
+  --accent-foreground: #faf8f5;
 
-  --muted: #eee2cb;
-  --muted-foreground: #6b5d4c;
+  --muted: #f5f5f5;
+  --muted-foreground: #737373;
 
-  --border: #ddccab;
-  --ring: #8a4a2c;
+  --border: #e5e5e5;
+  --ring: #0a0a0a;
+  
+  --success: #16a34a;
+  --warning: #ea580c;
+  --info: #0ea5e9;
 }
 
 .dark {
-  --background: #1b160f;
-  --foreground: #f3ead9;
-  --card: #241d14;
-  --card-foreground: #f3ead9;
+  --background: #0a0a0a;
+  --foreground: #faf8f5;
+  --card: #1a1a1a;
+  --card-foreground: #faf8f5;
 
-  --primary: #d0895a;
-  --primary-foreground: #1b160f;
+  --primary: #faf8f5;
+  --primary-foreground: #0a0a0a;
 
-  --secondary: #7f9a63;
-  --secondary-foreground: #14170e;
+  --secondary: #a3a3a3;
+  --secondary-foreground: #0a0a0a;
 
-  --accent: #e0bd7d;
-  --accent-foreground: #1b160f;
+  --accent: #8b2632;
+  --accent-foreground: #faf8f5;
 
-  --muted: #2c2417;
-  --muted-foreground: #cab99c;
+  --muted: #262626;
+  --muted-foreground: #a3a3a3;
 
-  --border: #3a2f20;
-  --ring: #d0895a;
+  --border: #262626;
+  --ring: #faf8f5;
+  
+  --success: #22c55e;
+  --warning: #f97316;
+  --info: #38bdf8;
 }
 
 @theme inline {
@@ -60,17 +68,21 @@
   --color-muted-foreground: var(--muted-foreground);
   --color-border: var(--border);
   --color-ring: var(--ring);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-info: var(--info);
 
-  --font-sans: var(--font-manrope);
-  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-cormorant);
 
-  --animate-fade-up: fade-up 0.7s ease-out both;
-  --animate-fade-in: fade-in 0.8s ease-out both;
+  --animate-fade-up: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.5s ease-out both;
+  --animate-slide-in: slide-in 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
 
   @keyframes fade-up {
     from {
       opacity: 0;
-      transform: translateY(18px);
+      transform: translateY(24px);
     }
     to {
       opacity: 1;
@@ -83,6 +95,16 @@
     }
     to {
       opacity: 1;
+    }
+  }
+  @keyframes slide-in {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }

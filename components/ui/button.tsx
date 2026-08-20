@@ -35,8 +35,10 @@ const variants: Record<NonNullable<BaseProps["variant"]>, string> = {
   ghost: "bg-transparent text-foreground hover:bg-muted ring-ring",
 };
 
+// Minimum 44px height on every size so buttons meet the recommended
+// mobile tap-target size (WCAG 2.5.5 / Apple & Google HIG guidance).
 const sizes: Record<NonNullable<BaseProps["size"]>, string> = {
-  sm: "h-9 px-4 text-sm",
+  sm: "h-11 px-4 text-sm",
   md: "h-11 px-6 text-sm",
   lg: "h-13 px-8 text-base",
 };

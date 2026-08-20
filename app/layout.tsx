@@ -1,28 +1,30 @@
 import type { Metadata } from "next";
-import { Manrope, Playfair_Display } from "next/font/google";
+import { Inter, Cormorant } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { Navbar } from "@/components/liquid/navbar";
+import { Footer } from "@/components/liquid/footer";
 import { RevealObserver } from "@/components/reveal-observer";
-import { siteConfig } from "@/data/site";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin", "cyrillic"],
+  display: 'swap',
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+const cormorant = Cormorant({
+  variable: "--font-cormorant",
   subsets: ["latin", "cyrillic"],
+  display: 'swap',
+  weight: ['300', '400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
-    template: `%s — ${siteConfig.name}`,
+    default: "LIQUID — Fashion value intelligence",
+    template: "%s — LIQUID",
   },
-  description: siteConfig.description,
+  description: "Buy what holds value. LIQUID анализирует цену, спрос и потенциал перепродажи fashion- и luxury-вещей до того, как вы их купите.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -30,11 +32,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="ru"
       suppressHydrationWarning
-      className={`${manrope.variable} ${playfair.variable} h-full antialiased`}
+      className={`${inter.variable} ${cormorant.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">
         <ThemeProvider>
-          <Header />
+          <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
           <RevealObserver />
