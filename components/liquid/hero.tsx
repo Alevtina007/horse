@@ -22,9 +22,8 @@ export function Hero() {
             </div>
 
             <h1 className="font-serif text-[clamp(2.4rem,6vw,5rem)] font-semibold leading-[1.08] tracking-tight">
-              Покупайте вещи,{' '}
-              <em className="not-italic text-accent">которые</em>{' '}
-              сохраняют ценность.
+              Покупайте вещи, которые сохраняют{' '}
+              <em className="not-italic text-accent">ценность</em>.
             </h1>
 
             <p className="mt-7 max-w-lg text-base leading-relaxed text-muted-foreground lg:text-lg">
