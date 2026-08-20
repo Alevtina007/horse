@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Vercel CLI build/deploy artifacts (compiled bundles, not source).
+    ".vercel/**",
   ]),
 ]);
 

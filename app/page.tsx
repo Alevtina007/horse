@@ -8,6 +8,7 @@ import { BrandIndex } from "@/components/liquid/brand-index";
 import { Calculator } from "@/components/liquid/calculator";
 import { HowItWorks } from "@/components/liquid/how-it-works";
 import { Philosophy } from "@/components/liquid/philosophy";
+import { LeadFormSection } from "@/components/liquid/lead-form-section";
 
 export const metadata: Metadata = {
   title: "LIQUID — Fashion value intelligence",
@@ -25,6 +26,7 @@ export default function Home() {
       <BrandIndex />
       <Calculator />
       <HowItWorks />
+      <LeadFormSection />
       <Philosophy />
     </>
   );
