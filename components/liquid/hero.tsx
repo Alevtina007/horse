@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-background">
       {/* Subtle grid background */}
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#0a0a0a08_1px,transparent_1px),linear-gradient(to_bottom,#0a0a0a08_1px,transparent_1px)] bg-[size:80px_80px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#16213e0a_1px,transparent_1px),linear-gradient(to_bottom,#16213e0a_1px,transparent_1px)] bg-[size:80px_80px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid min-h-screen items-center gap-12 lg:grid-cols-2 lg:gap-20 pt-24 pb-20">

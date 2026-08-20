@@ -3,7 +3,7 @@ export function Philosophy() {
     <section id="best-buys" className="relative py-32 lg:py-40 bg-foreground text-background overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:64px_64px]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#2f6bff14_1px,transparent_1px),linear-gradient(to_bottom,#2f6bff14_1px,transparent_1px)] bg-[size:64px_64px]" />
       </div>
 
       <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

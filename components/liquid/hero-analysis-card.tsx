@@ -28,14 +28,14 @@ function Sparkline({ points }: { points: number[] }) {
       {/* Gradient fill */}
       <defs>
         <linearGradient id="spark-grad" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#6b1c23" stopOpacity="0.18" />
-          <stop offset="100%" stopColor="#6b1c23" stopOpacity="0" />
+          <stop offset="0%" stopColor="#0b3ddb" stopOpacity="0.18" />
+          <stop offset="100%" stopColor="#0b3ddb" stopOpacity="0" />
         </linearGradient>
       </defs>
       <path d={fill} fill="url(#spark-grad)" />
-      <path d={d} fill="none" stroke="#6b1c23" strokeWidth="1.8" strokeLinejoin="round" strokeLinecap="round" />
+      <path d={d} fill="none" stroke="#0b3ddb" strokeWidth="1.8" strokeLinejoin="round" strokeLinecap="round" />
       {/* Last point dot */}
-      <circle cx={xs[xs.length - 1]} cy={ys[ys.length - 1]} r="3" fill="#6b1c23" />
+      <circle cx={xs[xs.length - 1]} cy={ys[ys.length - 1]} r="3" fill="#0b3ddb" />
     </svg>
   );
 }
@@ -50,12 +50,12 @@ export function HeroAnalysisCard() {
   return (
     <div className="w-full max-w-md mx-auto border border-border bg-card shadow-2xl">
       {/* ── Top image placeholder ── */}
-      <div className="relative aspect-[4/3] bg-[#f0ebe4] overflow-hidden flex items-center justify-center">
+      <div className="relative aspect-[4/3] bg-[#ede0c3] overflow-hidden flex items-center justify-center">
         {/* Editorial fashion placeholder */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#e8e0d5] via-[#d4c9bb] to-[#bfb0a0]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#f2e8d3] via-[#e3d3a8] to-[#c9b285]" />
         <div className="relative z-10 text-center">
-          <div className="font-serif text-[13px] uppercase tracking-[0.25em] text-[#8a7a6a]">The Row</div>
-          <div className="mt-1 font-serif text-[11px] tracking-[0.15em] text-[#8a7a6a]/80">Margaux 15</div>
+          <div className="font-serif text-[13px] uppercase tracking-[0.25em] text-[#16213e]/70">The Row</div>
+          <div className="mt-1 font-serif text-[11px] tracking-[0.15em] text-[#16213e]/60">Margaux 15</div>
         </div>
 
         {/* LIQUID SCORE badge */}

@@ -50,10 +50,10 @@ export function ProductAnalysisCard({
   return (
     <div className="group relative overflow-hidden border border-border bg-card transition-all hover:shadow-2xl">
       {/* Editorial placeholder image */}
-      <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-[#e8e0d5] via-[#d4c9bb] to-[#bfb0a0] flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
+      <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-[#f2e8d3] via-[#e3d3a8] to-[#c9b285] flex items-center justify-center transition-transform duration-500 group-hover:scale-105">
         <div className="text-center">
-          <div className="font-serif text-xs uppercase tracking-[0.25em] text-[#8a7a6a]">{brand}</div>
-          <div className="mt-1 font-serif text-[11px] tracking-[0.15em] text-[#8a7a6a]/80">{name}</div>
+          <div className="font-serif text-xs uppercase tracking-[0.25em] text-[#16213e]/70">{brand}</div>
+          <div className="mt-1 font-serif text-[11px] tracking-[0.15em] text-[#16213e]/60">{name}</div>
         </div>
       </div>
 

@@ -25,7 +25,7 @@ export function BrandIndex() {
   const maxRetention = Math.max(...brands.map((b) => b.retention));
 
   return (
-    <section id="brand-index" className="bg-[#0a0a0a] py-24 lg:py-36">
+    <section id="brand-index" className="bg-[#0d1b2e] py-24 lg:py-36">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 
         <div className="reveal mb-14 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">

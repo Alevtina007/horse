@@ -1,53 +1,53 @@
 @import "tailwindcss";
 
 :root {
-  /* LIQUID - Premium fashion value intelligence palette */
-  --background: #faf8f5;
-  --foreground: #0a0a0a;
-  --card: #ffffff;
-  --card-foreground: #0a0a0a;
+  /* LIQUID — sandy / beige / electric blue palette */
+  --background: #f2e8d3;
+  --foreground: #16213e;
+  --card: #faf5e9;
+  --card-foreground: #16213e;
 
-  --primary: #0a0a0a;
-  --primary-foreground: #faf8f5;
+  --primary: #0b3ddb;
+  --primary-foreground: #faf5e9;
 
-  --secondary: #4a4a4a;
-  --secondary-foreground: #faf8f5;
+  --secondary: #8a7355;
+  --secondary-foreground: #faf5e9;
 
-  --accent: #6b1c23;
-  --accent-foreground: #faf8f5;
+  --accent: #0b3ddb;
+  --accent-foreground: #ffffff;
 
-  --muted: #f5f5f5;
-  --muted-foreground: #737373;
+  --muted: #e8dcc0;
+  --muted-foreground: #6f6047;
 
-  --border: #e5e5e5;
-  --ring: #0a0a0a;
-  
+  --border: #d9c8a0;
+  --ring: #0b3ddb;
+
   --success: #16a34a;
   --warning: #ea580c;
   --info: #0ea5e9;
 }
 
 .dark {
-  --background: #0a0a0a;
-  --foreground: #faf8f5;
-  --card: #1a1a1a;
-  --card-foreground: #faf8f5;
+  --background: #0d1b2e;
+  --foreground: #f2e8d3;
+  --card: #14293f;
+  --card-foreground: #f2e8d3;
 
-  --primary: #faf8f5;
-  --primary-foreground: #0a0a0a;
+  --primary: #f2e8d3;
+  --primary-foreground: #0d1b2e;
 
-  --secondary: #a3a3a3;
-  --secondary-foreground: #0a0a0a;
+  --secondary: #b9c4d6;
+  --secondary-foreground: #0d1b2e;
 
-  --accent: #8b2632;
-  --accent-foreground: #faf8f5;
+  --accent: #2f6bff;
+  --accent-foreground: #ffffff;
 
-  --muted: #262626;
-  --muted-foreground: #a3a3a3;
+  --muted: #16283f;
+  --muted-foreground: #b9c4d6;
 
-  --border: #262626;
-  --ring: #faf8f5;
-  
+  --border: #22364f;
+  --ring: #2f6bff;
+
   --success: #22c55e;
   --warning: #f97316;
   --info: #38bdf8;

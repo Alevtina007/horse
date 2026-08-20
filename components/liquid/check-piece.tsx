@@ -12,7 +12,7 @@ export function CheckPiece() {
   const [url, setUrl] = useState('');
 
   return (
-    <section id="check" className="bg-[#0a0a0a] py-24 lg:py-36">
+    <section id="check" className="bg-[#0d1b2e] py-24 lg:py-36">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
@@ -46,7 +46,7 @@ export function CheckPiece() {
                 className="w-full border border-white/10 bg-white/5 py-4 pl-11 pr-4 text-sm text-white placeholder:text-white/25 outline-none transition-all focus:border-white/40"
               />
             </div>
-            <button className="group flex items-center justify-center gap-2 bg-white px-8 py-4 text-sm font-semibold text-black transition-all hover:bg-white/90">
+            <button className="group flex items-center justify-center gap-2 bg-[#2f6bff] px-8 py-4 text-sm font-semibold text-white transition-all hover:bg-[#4d80ff]">
               Проверить
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
             </button>

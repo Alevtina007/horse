@@ -26,7 +26,7 @@ export function Calculator() {
   ];
 
   return (
-    <section className="bg-[#faf8f5] py-24 lg:py-36">
+    <section className="bg-[#f2e8d3] py-24 lg:py-36">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
 
         <div className="reveal mb-16 text-center">
