@@ -73,13 +73,13 @@ export function ProductAnalysisCard({
             <div className="text-xs uppercase tracking-wider text-muted-foreground">
               Retail price
             </div>
-            <div className="text-lg font-semibold mt-1">€{retailPrice.toLocaleString()}</div>
+            <div className="text-lg font-semibold mt-1">{retailPrice.toLocaleString('ru-RU')} ₽</div>
           </div>
           <div>
             <div className="text-xs uppercase tracking-wider text-muted-foreground">
               Market price
             </div>
-            <div className="text-lg font-semibold mt-1">€{marketPrice.toLocaleString()}</div>
+            <div className="text-lg font-semibold mt-1">{marketPrice.toLocaleString('ru-RU')} ₽</div>
           </div>
           <div className="col-span-2">
             <div className="text-xs uppercase tracking-wider text-muted-foreground">

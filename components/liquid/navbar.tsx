@@ -62,13 +62,13 @@ export function Navbar() {
             href="#sign-in"
             className="hidden text-[13px] font-medium text-foreground/60 transition-colors hover:text-foreground lg:block"
           >
-            Sign in
+            Войти
           </a>
           <Link
             href="#check"
             className="bg-primary px-5 py-2.5 text-[13px] font-medium text-primary-foreground transition-all hover:bg-primary/85"
           >
-            Analyze a Piece
+            Проверить вещь
           </Link>
 
           {/* Burger */}
@@ -101,7 +101,7 @@ export function Navbar() {
               onClick={() => setOpen(false)}
               className="block py-4 text-base font-medium text-foreground/70 transition-colors hover:text-foreground"
             >
-              Sign in
+              Войти
             </a>
           </nav>
         </div>

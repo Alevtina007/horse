@@ -83,15 +83,15 @@ export function HeroAnalysisCard() {
         <div className="grid grid-cols-3 gap-3 border-y border-border py-4 text-center">
           <div>
             <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Retail</div>
-            <div className="mt-1 font-semibold">€5,390</div>
+            <div className="mt-1 font-semibold">539 000 ₽</div>
           </div>
           <div className="border-x border-border">
             <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Market</div>
-            <div className="mt-1 font-semibold">€4,850</div>
+            <div className="mt-1 font-semibold">485 000 ₽</div>
           </div>
           <div>
             <div className="text-[10px] uppercase tracking-wider text-muted-foreground">Resale est.</div>
-            <div className="mt-1 font-semibold text-sm">€4,200–4,700</div>
+            <div className="mt-1 font-semibold text-sm">420 000–470 000 ₽</div>
           </div>
         </div>
 

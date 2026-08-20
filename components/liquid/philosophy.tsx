@@ -39,7 +39,7 @@ export function Philosophy() {
             </div>
           </div>
           <div className="border-t border-background/20 pt-6">
-            <div className="text-4xl font-bold">€45M+</div>
+            <div className="text-4xl font-bold">₽4,5 млрд+</div>
             <div className="mt-2 text-sm uppercase tracking-wider opacity-70">
               Общая стоимость анализов
             </div>

@@ -61,6 +61,14 @@ export function Footer() {
                 >
                   Telegram <ExternalLink className="h-3.5 w-3.5" />
                 </a>
+                <a
+                  href="https://vk.com/liquid"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-sm text-muted-foreground border border-border px-4 py-2 transition-all hover:border-primary hover:text-foreground"
+                >
+                  ВКонтакте <ExternalLink className="h-3.5 w-3.5" />
+                </a>
               </div>
             </div>
 
